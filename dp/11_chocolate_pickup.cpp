@@ -166,3 +166,70 @@ int maximumChocolates(int r, int c, vector<vector<int>> &grid) {
 }
 
 // tabulation ends here
+
+
+// space optimization starts here
+
+#include <bits/stdc++.h> 
+
+
+
+
+int maximumChocolates(int r, int c, vector<vector<int>> &grid) {
+    vector<vector<int>> front(c,vector<int>(c,-1));
+    for(int x1=0;x1<c;x1++){
+        for(int x2=0;x2<c;x2++){
+            if(x1==x2){
+                 front[x1][x2]= grid[r-1][x1];
+                 }
+            else{
+                 front[x1][x2]=grid[r-1][x1]+grid[r-1][x2];
+                 }
+
+        }
+        
+    }
+    // cout<<"base case resolved"<<endl;
+    for(int i=r-2;i>=0;i--){
+    vector<vector<int>> curr(c,vector<int>(c,-1));
+        for(int x1=0;x1<c;x1++){
+            for(int x2=0;x2<c;x2++){
+                int max = -1e9;
+                vector<int> p={-1,0,1};
+                int left=-1e9,right=-1e9,down=-1e9;
+                int value;
+                if(x1==x2) value=grid[i][x1];
+                if(x1!=x2) value =grid[i][x1]+grid[i][x2];
+                // int max=-1e9;
+                for(auto a:p){
+                    for(auto b: p){
+                        int temp=-1e9;
+                        if(x1+a<0||x2+b<0||x1+a>=c||x2+b>=c){
+                            temp=-1e9;
+                        }
+                        else{
+                        temp=front[x1+a][x2+b];
+                        if(temp>max){
+                            max=temp;
+                        }
+
+                        }
+
+
+                    }
+
+                }
+                value+=max;
+           
+                curr[x1][x2]=value;
+                
+            }
+
+        }
+        front=curr;
+    }
+    return front[0][c-1];
+}
+
+
+// space optimization ends here
