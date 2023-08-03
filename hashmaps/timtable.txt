@@ -1,0 +1,31 @@
+
+
+Monday:
+    9:40-10:30  :: Computer Graphics[LT401]
+    10:30-11:20 :: Theory of Computation[LT401]
+    11:20-1:00  :: Computer Graphics Lab [IS-2]
+Tuesday:
+    8:50:9-40   :: UCS664[LT402]   /UCS638(LT103)
+    9:40-10:30  :: Quantum Computing[LT401]
+    10:30-11:20 :: Theory of Computation[LT401]
+    11:20-12:10 :: Computer Graphics[LT401]
+    1:00-1:50   :: UCS622[LT101]  /UCS648(LT103)
+Wednesday:
+    8:50:9-40   :: UCS664[LT402]   /UCS638(LT103)
+    1:00-1:50   :: UCS622[LT101]  /UCS648(LT103)
+Thursday:
+    8:50-9:40   :: Theory of Computation Tutorial[T202]
+    9:40-11:20  :: Quantum Computing Lab[GC-2]
+    11:20-12:10 :: Quantum Computing[LT401]
+    12:10-1:00  :: Theory of Computation[LT401]
+Friday:
+    8:00-9:40   :: UCS664[ES2] /UCS648[IS1]
+    9:40-11:20  :: UCS622[ES2] /UCS638[IS1]
+    11:20-12:10 :: Quantum Computing[LT402]
+    12:10-1:00  :: Computer Graphics[LT402]
+
+
+    
+
+
+
